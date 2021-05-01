@@ -1,8 +1,8 @@
 import { useState } from 'react';
-import style from './loader.module.scss';
+import style from '../../styles/loader.module.scss';
 
 import Lottie from 'react-lottie';
-import animationData from '../../public/loader.json';
+import animationData from '../../../public/loader.json';
 
 export default function Loader() {
   const [animationState, setAnimationState] = useState({

@@ -1,8 +1,8 @@
 import Head from 'next/head';
 import { useState, useEffect } from 'react';
-import Loader from '../components/Loader';
+import Loader from '../src/components/Loader';
 
-import style from './home.module.scss'
+import style from '../src/styles/home.module.scss';
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -14,7 +14,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className={style.container}>
+    <div className={style.homeContainer}>
       <Head>
         <title>Raff Portfolio</title>
         <link rel="icon" href="/favicon.ico" />
