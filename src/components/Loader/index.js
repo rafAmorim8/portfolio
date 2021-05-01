@@ -4,7 +4,7 @@ import style from '../../styles/loader.module.scss';
 import Lottie from 'react-lottie';
 import animationData from '../../../public/loader.json';
 
-export default function Loader() {
+export function Loader() {
   const [animationState, setAnimationState] = useState({
     isStopped: false, isPaused: false
   });
