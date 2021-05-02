@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import style from '../../styles/loader.module.scss';
+import style from './loader.module.scss';
 
 import Lottie from 'react-lottie';
 import animationData from '../../../public/loader.json';

@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import { useState, useEffect } from 'react';
 
-// import { Loader } from '../components/Loader';
+import { Loader } from '../components/Loader';
 
 import style from '../styles/home.module.scss';
 
