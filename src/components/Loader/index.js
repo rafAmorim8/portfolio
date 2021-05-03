@@ -9,7 +9,7 @@ export function Loader() {
     isStopped: false, isPaused: false
   });
 
-  const defaultOoptions = {
+  const defaultOptions = {
     loop: true,
     autoplay: true,
     animationData: animationData,
@@ -21,7 +21,7 @@ export function Loader() {
   return (
     <div className={style.loaderContainer}>
       <Lottie
-        options={defaultOoptions}
+        options={defaultOptions}
         height={150}
         width={150}
         isStopped={animationState.isStopped}

@@ -1,6 +1,7 @@
 .headerContainer {
   background: #000;
   height: 5rem;
+  max-width: 100vw;
 
   display: flex;
   align-items: center;
@@ -8,4 +9,30 @@
   padding: 2rem 4rem;
 
   border-bottom: 1px solid var(--gray-100);
+
+  .navbar {
+    height: 5rem;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+      color: var(--purple-300);
+      font-family: Lexend, sans-serif;
+      font-weight: 600;
+      font-size: 1.5rem;
+      text-decoration: none;
+    }
+
+    .menuIcon {
+      outline: none;
+      border: 0;
+      background: transparent;
+
+      .hamburguerIcon {}
+    }
+  }
 }
