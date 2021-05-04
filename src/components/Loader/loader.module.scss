@@ -11,6 +11,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #000;
-  z-index: 5;
+  background: var(--bgDark);
+  z-index: 100;
 }
