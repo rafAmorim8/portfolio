@@ -46,6 +46,12 @@ export function Header() {
           </div>
         </button>
       </nav>
+          <ul className={styles.menuDropdown}>
+            <li><a href="#home" onclick="uncheck()">Home</a></li>
+            <li><a href="#about" onclick="uncheck()">About</a></li>
+            <li><a href="#portfolio" onclick="uncheck()">Portfolio</a></li>
+            <li><a href="#contact" onclick="uncheck()">Contact</a></li>
+          </ul>
     </header>
   );
 }
