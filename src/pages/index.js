@@ -1,6 +1,6 @@
 import Head from 'next/head';
-import { useState, useEffect } from 'react';
 
+import {Hero} from '../components/Hero';
 
 import style from '../styles/home.module.scss';
 
@@ -11,6 +11,7 @@ export default function Home() {
         <title>Raff :: Home</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <Hero />
     </div>
   )
 }
