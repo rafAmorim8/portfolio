@@ -14,7 +14,7 @@
 
     .logo {
       color: var(--white);
-      font-family: Lexend, sans-serif;
+      font-family: 'Karla', sans-serif;
       letter-spacing: 0.2rem;
       font-weight: 600;
       font-size: 1.5rem;
@@ -45,28 +45,29 @@
     }
 
   }
-  .menuDropdown{
+
+  .menuDropdown {
     background: #000;
 
     height: 100vh;
     width: 100vw;
     padding-left: 5rem;
     padding-top: 5rem;
-    
+
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    
+
     display: none;
     justify-content: space-evenly;
     flex-direction: column;
-    
+
     list-style: none;
 
-    li{
-      a{
+    li {
+      a {
         text-decoration: none;
         color: var(--white);
         font: 500 3rem Inter, sans-serif;

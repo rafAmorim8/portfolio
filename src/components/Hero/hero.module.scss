@@ -1,3 +1,37 @@
-.heroContainer{
-    
+.heroContainer {
+  height: calc(100vh - 5rem);
+  width: 100%;
+  padding: 10rem 2rem;
+
+  .heroHello {
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    font: 700 1rem Karla, sans-serif;
+    color: var(--pink);
+  }
+
+  .heroInfo {
+    font: 700 1.8rem Spectral, serif;
+    margin-bottom: 1.2rem;
+  }
+
+  .heroDescription {
+    font: 300 1.1rem Karla, sans-serif;
+    margin-bottom: 2rem;
+  }
+
+  .heroButton {
+    width: 140px;
+    background: var(--white);
+    border: 1px solid var(--pink);
+    padding: 5px;
+
+    a {
+      text-decoration: none;
+
+      font: 700 1rem Karla, serif;
+      color: var(--pink);
+    }
+  }
+
 }

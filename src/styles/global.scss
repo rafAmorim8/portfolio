@@ -43,8 +43,8 @@ body {
 body,
 input,
 textarea {
-  font: 500 1rem Inter, sans-serif;
-  color: var(--gray-500)
+  font: 500 1rem Karla, sans-serif;
+  color: var(--white)
 }
 
 h1,
@@ -54,7 +54,7 @@ h4,
 h5,
 h6 {
   font-weight: 700;
-  font-family: Lexend, serif;
+  font-family: Spectral, serif;
   color: var(--purple-800);
 }
 
@@ -68,4 +68,7 @@ h2 {
 
 button {
   cursor: pointer;
+  background: none;
+  outline: none;
+  border: 0;
 }
