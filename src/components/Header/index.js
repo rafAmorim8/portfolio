@@ -1,5 +1,6 @@
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import styles from './header.module.scss';
+import { TweenMax, Power3 } from 'gsap';
 
 import Lottie from 'react-lottie';
 import animationData from '../../../public/menuIcon.json';
@@ -8,6 +9,7 @@ export function Header() {
   const [animationState, setAnimationState] = useState({
     isStopped: true, isPaused: true, direction: -1,
   });
+  let header = useRef(null);
 
   const defaultOptions = {
     loop: false,
@@ -19,7 +21,6 @@ export function Header() {
   }
 
   const toggleMenu = () => {
-    console.log('click');
     const reverseAnimation = -1;
     const normalAnimation = 1;
 
@@ -29,8 +30,12 @@ export function Header() {
     });
   }
 
+  useEffect(() => {
+    TweenMax.from(header, 1, { x: -100, opacity: 0, ease: Power3.easeOut });
+  }, []);
+
   return (
-    <header className={styles.headerContainer}>
+    <header className={styles.headerContainer} ref={el => header = el}>
       <nav className={styles.navbar}>
         <a href="/" className={styles.logo}>Raff</a>
         <button className={styles.menuButton} type="button" onClick={toggleMenu}>
@@ -46,12 +51,12 @@ export function Header() {
           </div>
         </button>
       </nav>
-          <ul className={styles.menuDropdown}>
-            <li><a href="#home" onclick="uncheck()">Home</a></li>
-            <li><a href="#about" onclick="uncheck()">About</a></li>
-            <li><a href="#portfolio" onclick="uncheck()">Portfolio</a></li>
-            <li><a href="#contact" onclick="uncheck()">Contact</a></li>
-          </ul>
+      <ul className={styles.menuDropdown}>
+        <li><a href="#home" onclick="uncheck()">Home</a></li>
+        <li><a href="#about" onclick="uncheck()">About</a></li>
+        <li><a href="#portfolio" onclick="uncheck()">Portfolio</a></li>
+        <li><a href="#contact" onclick="uncheck()">Contact</a></li>
+      </ul>
     </header>
   );
 }
