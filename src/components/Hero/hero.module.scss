@@ -1,23 +1,30 @@
 .heroContainer {
+  visibility: hidden;
   height: calc(100vh - 5rem);
   width: 100%;
   padding: 10rem 2rem;
 
-  .heroHello {
-    text-transform: uppercase;
+  .heroHello,
+  .heroInfo,
+  .heroDescription {
+    margin: 0;
+    min-height: 2rem;
+    overflow: hidden;
     margin-bottom: 2rem;
+  }
+
+  .heroHelloInner {
+    text-transform: uppercase;
     font: 700 1rem Karla, sans-serif;
     color: var(--pink);
   }
 
-  .heroInfo {
+  .heroInfoInner {
     font: 700 1.8rem Spectral, serif;
-    margin-bottom: 1.2rem;
   }
 
-  .heroDescription {
+  .heroDescriptionInner {
     font: 300 1.1rem Karla, sans-serif;
-    margin-bottom: 2rem;
   }
 
   .heroButton {
