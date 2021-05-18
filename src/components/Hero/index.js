@@ -20,9 +20,9 @@ export function Hero() {
         tl.staggerFrom([headlineFirst.children, headlineSecond.children, headlineThird.children], 1, {
             y: 44,
             ease: Power3.easeOut,
-            delay: .8
+            delay: .25
         }, .15)
-            .from(heroButton, 1, { y: 25, opacity: 0, ease: Power3.easeOut }, 1.5)
+            .from(heroButton, 1, { y: 25, opacity: 0, ease: Power3.easeOut }, 0.75)
     }, [tl])
 
     return (
