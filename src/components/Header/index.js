@@ -33,7 +33,7 @@ export function Header() {
   useEffect(() => {
     TweenMax.to(header, 0, { css: { visibility: 'visible' } });
 
-    TweenMax.from(header, 1, { x: -100, opacity: 0, ease: Power3.easeOut });
+    TweenMax.from(header, 1, { y: 10, opacity: 0, ease: Power3.easeOut });
   }, []);
 
   return (
