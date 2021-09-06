@@ -30,7 +30,7 @@ export function Header() {
       direction: animationState.direction === normalAnimation ? reverseAnimation : normalAnimation,
     });
 
-    setShowMenu(!showMenu);
+    document.getElementById("menu").classList.toggle("active");
   }
 
   useEffect(() => {
