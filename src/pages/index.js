@@ -1,6 +1,7 @@
 import Head from 'next/head';
 
-import {Hero} from '../components/Hero';
+import { Header } from '../components/Header';
+import { Hero } from '../components/Hero';
 
 import style from '../styles/home.module.scss';
 
@@ -11,7 +12,8 @@ export default function Home() {
         <title>Raff :: Home</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Hero />
+      <Header />
+      {/* <Hero /> */}
     </div>
   )
 }

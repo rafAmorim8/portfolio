@@ -6,6 +6,7 @@ import Lottie from 'react-lottie';
 import animationData from '../../../public/menuIcon.json';
 
 export function Header() {
+  const [showMenu, setShowMenu] = useState(false);
   const [animationState, setAnimationState] = useState({
     isStopped: true, isPaused: true, direction: -1,
   });
@@ -28,6 +29,8 @@ export function Header() {
       isStopped: false,
       direction: animationState.direction === normalAnimation ? reverseAnimation : normalAnimation,
     });
+
+    setShowMenu(!showMenu);
   }
 
   useEffect(() => {
@@ -52,13 +55,13 @@ export function Header() {
             />
           </div>
         </button>
+        <ul className={styles.navList} id="menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
       </nav>
-      <ul className={styles.menuDropdown}>
-        <li><a href="#home" onclick="uncheck()">Home</a></li>
-        <li><a href="#about" onclick="uncheck()">About</a></li>
-        <li><a href="#portfolio" onclick="uncheck()">Portfolio</a></li>
-        <li><a href="#contact" onclick="uncheck()">Contact</a></li>
-      </ul>
     </header>
   );
 }
