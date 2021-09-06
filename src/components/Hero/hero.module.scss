@@ -20,21 +20,21 @@
 
   .heroHelloInner {
     text-transform: uppercase;
-    font: 700 1.8rem Karla, sans-serif;
+    font: 700 1.5rem Karla, sans-serif;
     color: var(--purple-500);
-    margin-bottom: 1.8rem;
+    margin-bottom: 1.6rem;
   }
 
   .heroInfoInner {
-    font: 700 2.8rem Spectral, serif;
-    line-height: 3rem;
+    font: 700 2.5rem Spectral, serif;
+    line-height: 2.6rem;
     margin-bottom: 2rem;
   }
 
   .heroDescriptionInner {
     color: var(--gray-100);
-    font: 300 1.5rem Karla, sans-serif;
-    line-height: 2rem;
+    font: 300 1.3rem Karla, sans-serif;
+    line-height: 1.8rem;
     margin-bottom: 5rem;
   }
 
@@ -44,7 +44,7 @@
     background: transparent;
     text-decoration: none;
     cursor: pointer;
-    font: 500 1.1rem Karla, serif;
+    font: 500 1.2rem Karla, serif;
     color: var(--purple-500);
     border-radius: 3px;
     border: 1px solid var(--purple-500);

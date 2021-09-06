@@ -18,10 +18,11 @@ export function Hero() {
 
         //Content animation
         tl.staggerFrom([headlineFirst.children, headlineSecond.children, headlineThird.children], 1, {
-            y: 185,
+            y: 25,
+            opacity: 0,
             ease: Power3.easeOut,
-        }, .15)
-            .from(heroButton, 1, { y: 25, opacity: 0, ease: Power3.easeOut }, 0.75)
+        }, .1)
+            .from(heroButton, 1, { y: 25, opacity: 0, ease: Power3.easeOut }, 0.5)
     }, [tl])
 
     return (
@@ -35,7 +36,7 @@ export function Hero() {
             <div className={styles.heroDescription}>
                 <p className={styles.heroDescriptionInner}>
                     I am a recent graduate developer who loves to work with full stack applications. I am currently looking for my first job as a developer.
-            </p>
+                </p>
             </div>
             <a className={styles.heroButton} href="#portfolio">See my work</a>
         </div>
