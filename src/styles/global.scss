@@ -25,6 +25,15 @@
   --purple-800: #6F48C9;
 }
 
+body {
+  .active {
+    top: 5rem !important;
+    background: var(--bg-dark);
+    opacity: 1 !important;
+    z-index: 2 !important;
+  }
+}
+
 @media (max-width: 1080px) {
   html {
     font-size: 93.75%; //15px and accessible
@@ -46,6 +55,12 @@ input,
 textarea {
   font: 500 1rem Karla, sans-serif;
   color: var(--white)
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
 }
 
 h1,
