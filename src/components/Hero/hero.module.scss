@@ -3,14 +3,11 @@
 
   min-height: 100vh;
   z-index: 1;
-  padding: 80px 1rem;
   margin: 0 auto;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
-
-  // transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
 
   .heroHello,
   .heroInfo,
@@ -34,9 +31,6 @@
   }
 
   .heroDescriptionInner {
-    color: var(--gray-100);
-    font: 300 1.3rem Karla, sans-serif;
-    line-height: 1.8rem;
     margin-bottom: 5rem;
   }
 

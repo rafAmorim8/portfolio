@@ -1,0 +1,38 @@
+.aboutContainer {
+  height: 100vh;
+  width: 100%;
+
+  h1 {
+    margin-bottom: 3rem;
+  }
+
+  ul {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    margin: 1.3rem 0 5rem 0;
+    font-size: 1.2rem;
+
+    li {
+      list-style-position: inside;
+      list-style-type: circle;
+      margin-right: 15px;
+    }
+  }
+
+  .aboutButton {
+    text-align: center;
+    background: var(--purple-500);
+    text-decoration: none;
+    cursor: pointer;
+    font: 500 1.2rem Karla, serif;
+    color: var(--white);
+    border-radius: 3px;
+    border: 1px solid var(--purple-500);
+    padding: 1.25rem 1.75rem;
+    transition: background 300ms ease-in-out;
+
+    &:hover {
+      background: var(--purple-800);
+    }
+  }
+}

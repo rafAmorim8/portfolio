@@ -26,7 +26,7 @@ export function Hero() {
     }, [tl])
 
     return (
-        <div className={styles.heroContainer} ref={el => content = el}>
+        <section className={styles.heroContainer} ref={el => content = el}>
             <div className={styles.heroHello}>
                 <p className={styles.heroHelloInner}>Hello, my name is Rafael</p>
             </div>
@@ -39,6 +39,6 @@ export function Hero() {
                 </p>
             </div>
             <a className={styles.heroButton} href="#portfolio">See my work</a>
-        </div>
+        </section>
     )
 }
