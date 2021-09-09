@@ -1,8 +1,32 @@
+import { useEffect, useRef } from 'react';
 import styles from './about.module.scss';
+import gsap, { Power3 } from 'gsap';
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+
+
 
 export function About() {
+  const ref = useRef(null);
+
+  gsap.registerPlugin(ScrollTrigger);
+
+  useEffect(() => {
+    gsap.to(ref.current, {
+      scrollTrigger: {
+        trigger: ref.current,
+        start: "center bottom",
+      },
+      y: -20,
+      duration: 2,
+      opacity: 1,
+      stagger: 0.1,
+      ease: Power3.easeOut
+    });
+
+  }, []);
+
   return (
-    <section className={styles.aboutContainer} id="about">
+    <section className={styles.aboutContainer} id="about" ref={ref}>
       <h1>About Me</h1>
       <p>
         Hi! I am Rafael, a computer science student that lives in Vancouver, who loves developing things.<br /><br />
