@@ -6,7 +6,6 @@ import Lottie from 'react-lottie';
 import animationData from '../../../public/menuIcon.json';
 
 export function Header() {
-  const [showMenu, setShowMenu] = useState(false);
   const [animationState, setAnimationState] = useState({
     isStopped: true, isPaused: true, direction: -1,
   });
