@@ -1,0 +1,41 @@
+[
+  {
+    "id": 1,
+    "name": "Project 1",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, optio eos facere quasi illum praesentium quaerat deleniti animi a quo quidem quibusdam? Qui iusto, adipisci inventore nemo non possimus explicabo?",
+    "technologies": [
+      "ReactJS",
+      "NodeJS",
+      "HTML"
+    ],
+    "url": "www.google.com",
+    "gitRepo": "https://github.com/rafAmorim8/portfolio",
+    "imageName": "projectOneImage.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Project 2",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, optio eos facere quasi illum praesentium quaerat deleniti animi a quo quidem quibusdam? Qui iusto, adipisci inventore nemo non possimus explicabo?",
+    "technologies": [
+      "ReactJS",
+      "NodeJS",
+      "HTML"
+    ],
+    "url": "www.google.com",
+    "gitRepo": "https://github.com/rafAmorim8/portfolio",
+    "imageName": "projectTwoImage.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Project 3",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, optio eos facere quasi illum praesentium quaerat deleniti animi a quo quidem quibusdam? Qui iusto, adipisci inventore nemo non possimus explicabo?",
+    "technologies": [
+      "ReactJS",
+      "NodeJS",
+      "HTML"
+    ],
+    "url": "https://google.com",
+    "gitRepo": "https://github.com/rafAmorim8/portfolio",
+    "imageName": "projectThreeImage.jpg"
+  }
+]
