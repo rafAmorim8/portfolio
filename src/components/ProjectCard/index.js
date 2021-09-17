@@ -14,7 +14,7 @@ export function ProjectCard({ id, name, description, technologies, url, gitRepo 
     >
       <h3>{name}</h3>
       <p>{description}</p>
-      <p>{technologies.map(tech => {
+      <p className={styles.technologies}>{technologies.map(tech => {
         return (
           <span>{tech}</span>
         )
