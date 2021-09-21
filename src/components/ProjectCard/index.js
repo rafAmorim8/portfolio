@@ -1,7 +1,8 @@
 import Image from 'next/image';
 
-
 import styles from './projectCard.module.scss';
+import GithubIcon from '../GithubIcon';
+import LinkIcon from '../LinkIcon';
 
 export function ProjectCard({ id, name, imageName, description, technologies, url, gitRepo }) {
 
@@ -18,8 +19,8 @@ export function ProjectCard({ id, name, imageName, description, technologies, ur
           )
         })}</ul>
         <div className={styles.links}>
-          <a href={`${gitRepo}`}><img className={styles.redirectLink} src="/githubLogo.svg" alt="See code in github" height={30} width={30} /></a>
-          <a href={`${url}`}><img className={styles.redirectLink} src="/externalLinkIcon.svg" alt="Visit website" /></a>
+          <a href={`${gitRepo}`}><GithubIcon /></a>
+          <a href={`${url}`}><LinkIcon /></a>
         </div>
       </div>
       <div className={styles.projectImageWrapper}>

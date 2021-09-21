@@ -89,13 +89,11 @@
         text-decoration: none;
         margin-right: 1rem;
 
-        img {
-          width: 30px;
-          height: 30px;
+        svg {
           transition: all 250ms ease;
 
           &:hover {
-            transform: scale(1.04);
+            fill: var(--purple-500);
           }
         }
       }
