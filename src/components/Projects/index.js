@@ -16,6 +16,7 @@ export function Projects() {
               technologies={project.technologies}
               url={project.url}
               gitRepo={project.gitRepo}
+              imageName={project.imageName}
             />
           )
         })}

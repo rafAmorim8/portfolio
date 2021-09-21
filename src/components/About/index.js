@@ -23,7 +23,6 @@ export function About() {
       stagger: 0.1,
       ease: Power3.easeOut
     });
-
   }, []);
 
   return (

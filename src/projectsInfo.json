@@ -10,7 +10,7 @@
     ],
     "url": "www.google.com",
     "gitRepo": "https://github.com/rafAmorim8/portfolio",
-    "imageName": "projectOneImage.jpg"
+    "imageName": "/projectOneImage.jpg"
   },
   {
     "id": 2,
@@ -23,7 +23,7 @@
     ],
     "url": "www.google.com",
     "gitRepo": "https://github.com/rafAmorim8/portfolio",
-    "imageName": "projectTwoImage.jpg"
+    "imageName": "/projectTwoImage.jpg"
   },
   {
     "id": 3,
@@ -36,6 +36,6 @@
     ],
     "url": "https://google.com",
     "gitRepo": "https://github.com/rafAmorim8/portfolio",
-    "imageName": "projectThreeImage.jpg"
+    "imageName": "/projectThreeImage.jpg"
   }
 ]
