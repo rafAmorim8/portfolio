@@ -1,8 +1,9 @@
 import { useEffect, useRef } from 'react';
-import styles from './about.module.scss';
+
 import gsap, { Power3 } from 'gsap';
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
+import styles from './about.module.scss';
 
 
 export function About() {

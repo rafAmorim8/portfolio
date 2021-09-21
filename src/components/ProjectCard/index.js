@@ -1,14 +1,36 @@
+import { useRef, useEffect } from 'react';
 import Image from 'next/image';
 
-import styles from './projectCard.module.scss';
+import gsap, { Power3 } from 'gsap';
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+
 import GithubIcon from '../GithubIcon';
 import LinkIcon from '../LinkIcon';
 
+import styles from './projectCard.module.scss';
+
 export function ProjectCard({ id, name, imageName, description, technologies, url, gitRepo }) {
+  const ref = useRef(null);
+
+  gsap.registerPlugin(ScrollTrigger);
+
+  useEffect(() => {
+    gsap.from(ref.current, {
+      scrollTrigger: {
+        trigger: ref.current,
+        start: "bottom bottom",
+      },
+      y: 40,
+      duration: 0.8,
+      opacity: 0,
+      ease: Power3.easeOut
+    });
+  }, []);
 
   return (
     <div
       className={styles.projectCardContainer}
+      ref={ref}
     >
       <div className={styles.projectInfo}>
         <h3>{name}</h3>
