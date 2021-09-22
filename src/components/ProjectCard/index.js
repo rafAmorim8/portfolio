@@ -10,18 +10,31 @@ import LinkIcon from '../LinkIcon';
 import styles from './projectCard.module.scss';
 
 export function ProjectCard({ id, name, imageName, description, technologies, url, gitRepo }) {
-  const ref = useRef(null);
+  const card = useRef(null);
+  const cardImage = useRef(null);
 
   gsap.registerPlugin(ScrollTrigger);
 
   useEffect(() => {
-    gsap.from(ref.current, {
+    gsap.from(card.current, {
       scrollTrigger: {
-        trigger: ref.current,
+        trigger: card.current,
         start: "bottom bottom",
       },
       y: 40,
       duration: 0.8,
+      opacity: 0,
+      ease: Power3.easeOut
+    });
+
+    gsap.from(cardImage.current, {
+      scrollTrigger: {
+        trigger: card.current,
+        start: "bottom bottom",
+      },
+      y: 40,
+      duration: 0.8,
+      delay: 0.001,
       opacity: 0,
       ease: Power3.easeOut
     });
@@ -30,7 +43,7 @@ export function ProjectCard({ id, name, imageName, description, technologies, ur
   return (
     <div
       className={styles.projectCardContainer}
-      ref={ref}
+      ref={card}
     >
       <div className={styles.projectInfo}>
         <h3>{name}</h3>
@@ -45,9 +58,9 @@ export function ProjectCard({ id, name, imageName, description, technologies, ur
           <a href={`${url}`}><LinkIcon /></a>
         </div>
       </div>
-      <div className={styles.projectImageWrapper}>
+      <div className={styles.projectImageWrapper} ref={cardImage}>
         <a href="http://google.com" target="_blank" rel="noopener noreferrer">
-          <Image className={styles.projectImage} src={imageName} alt="Project 1" layout="fill" object-fit="cover" />
+          <Image className={styles.projectImage} src={imageName} priority="true" placeholder="blur" alt="Project 1" layout="fill" object-fit="cover" />
         </a>
       </div>
     </div >

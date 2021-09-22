@@ -1,6 +1,6 @@
 .projectCardContainer {
   position: relative;
-  margin: 4rem 2rem;
+  margin: 6rem 2rem 4rem 2rem;
   display: grid;
   grid-template-columns: repeat (12, 1fr);
 
@@ -33,7 +33,7 @@
         height: 100%;
         inset: 0px;
         z-index: 2;
-        background-color: rgba(18, 18, 20, 0.95);
+        background-color: rgba(18, 18, 20, 0.93);
       }
 
       .projectImage {
