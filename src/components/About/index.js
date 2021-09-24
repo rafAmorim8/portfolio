@@ -15,7 +15,7 @@ export function About() {
     gsap.from(ref.current, {
       scrollTrigger: {
         trigger: ref.current,
-        start: "top center",
+        start: "30% bottom",
       },
       y: 30,
       duration: 2,
