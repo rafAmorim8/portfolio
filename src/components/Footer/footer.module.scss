@@ -1,0 +1,57 @@
+.footerContainer {
+  height: 15vh;
+  width: 100vw;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .socialLinks {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 1rem;
+
+    svg {
+      fill: var(--gray-200);
+      transition: fill 200ms ease-in-out;
+
+      &:hover {
+        fill: var(--purple-500);
+      }
+    }
+
+    .codepenIcon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      svg {
+        path {
+          fill: var(--gray-200);
+          transition: fill 200ms ease-in-out;
+        }
+
+        &:hover {
+          path {
+            fill: var(--purple-500);
+          }
+        }
+      }
+    }
+  }
+
+  .sourceCodeLink {
+    text-decoration: none;
+    color: var(--gray-200);
+    font-size: 1.1rem;
+    transition: color 200ms ease-in-out;
+
+    &:hover {
+      color: var(--purple-500);
+    }
+  }
+
+}

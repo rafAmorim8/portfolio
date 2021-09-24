@@ -30,7 +30,7 @@ export function ProjectCard({ id, name, imageName, description, technologies, ur
     gsap.from(cardImage.current, {
       scrollTrigger: {
         trigger: card.current,
-        start: "bottom bottom",
+        start: "30% bottom",
       },
       y: 40,
       duration: 0.8,
