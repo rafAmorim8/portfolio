@@ -12,14 +12,14 @@ export function About() {
   gsap.registerPlugin(ScrollTrigger);
 
   useEffect(() => {
-    gsap.to(ref.current, {
+    gsap.from(ref.current, {
       scrollTrigger: {
         trigger: ref.current,
         start: "top center",
       },
-      y: -30,
+      y: 30,
       duration: 2,
-      opacity: 1,
+      opacity: 0,
       stagger: 0.1,
       ease: Power3.easeOut
     });
