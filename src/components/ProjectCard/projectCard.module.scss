@@ -1,6 +1,6 @@
 .projectCardContainer {
   position: relative;
-  margin: 6rem 2rem 4rem 2rem;
+  margin: 6rem 0 4rem 0;
   display: grid;
   grid-template-columns: repeat (12, 1fr);
 
@@ -47,7 +47,7 @@
 
   .projectInfo {
     height: 100%;
-    padding: 3rem 2rem;
+    padding: 2rem 1.5rem;
 
     grid-area: 1 / 1 / -1 / 7;
     grid-column: 1 / -1;
@@ -59,18 +59,19 @@
     z-index: 999;
 
     h3 {
-      margin-bottom: 3rem;
-      font-size: 2rem;
+      margin-bottom: 1.8rem;
+      font-size: 1.8rem;
       color: var(--gray-100);
     }
 
     p {
-      margin-bottom: 3rem;
+      margin-bottom: 1.8rem;
+      line-height: 1.7rem;
       color: var(--gray-200);
     }
 
     .technologies {
-      margin-bottom: 2rem;
+      margin-bottom: 1.8rem;
       font-size: 1.1rem;
       list-style-type: none;
       display: flex;
@@ -88,7 +89,6 @@
 
       a {
         text-decoration: none;
-        margin-right: 1rem;
 
         svg {
           transition: all 250ms ease;
@@ -97,6 +97,10 @@
             fill: var(--purple-500);
           }
         }
+      }
+
+      a:first-of-type {
+        margin-right: 1rem;
       }
     }
   }
