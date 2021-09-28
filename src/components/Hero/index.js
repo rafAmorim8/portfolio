@@ -1,11 +1,11 @@
 import { useRef, useEffect } from 'react';
 import styles from './hero.module.scss';
-import { TweenMax, TimelineLite, Power3 } from 'gsap';
+import { gsap, Power3 } from 'gsap';
 
 export function Hero() {
     let content = useRef(null);
 
-    let tl = new TimelineLite({ delay: 0.5 });
+    let tl = new gsap.timeline({ delay: 0.5 });
 
     useEffect(() => {
         //Content vars
@@ -14,7 +14,7 @@ export function Hero() {
         let headlineThird = headlineSecond.nextSibling;
         let heroButton = headlineThird.nextSibling;
 
-        TweenMax.to(content, 0, { css: { visibility: 'visible' } });
+        gsap.to(content, 0, { css: { visibility: 'visible' } });
 
         //Content animation
         tl.staggerFrom([headlineFirst.children, headlineSecond.children, headlineThird.children], 1, {
