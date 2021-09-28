@@ -55,10 +55,10 @@ export function Header() {
           </div>
         </button>
         <ul className={styles.navList} id="menu">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#home" onClick={toggleMenu}>Home</a></li>
+          <li><a href="#about" onClick={toggleMenu}>About</a></li>
+          <li><a href="#portfolio" onClick={toggleMenu}>Portfolio</a></li>
+          <li><a href="#contact" onClick={toggleMenu}>Contact</a></li>
         </ul>
       </nav>
     </header>
