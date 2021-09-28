@@ -17,7 +17,7 @@
     align-items: center;
 
     .logo {
-      color: var(--white);
+      color: var(--gray-100);
       font-family: 'Karla', sans-serif;
       letter-spacing: 0.2rem;
       font-weight: 600;
@@ -48,7 +48,7 @@
       li {
         a {
           text-decoration: none;
-          color: var(--bg-white);
+          color: var(--gray-100);
 
           font-weight: 600;
           font-size: 1.5rem;

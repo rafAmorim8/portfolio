@@ -32,23 +32,24 @@
 
   .heroDescriptionInner {
     margin-bottom: 5rem;
+    color: var(--gray-200);
   }
 
   .heroButton {
     max-width: 200px;
     text-align: center;
-    background: transparent;
+    background: var(--purple-500);
     text-decoration: none;
     cursor: pointer;
     font: 500 1.2rem Karla, serif;
-    color: var(--purple-500);
+    color: var(--white);
     border-radius: 3px;
     border: 1px solid var(--purple-500);
     padding: 1.25rem 1.75rem;
-    transition: background 300ms ease-in-out;
+    transition: filter 300ms ease-in-out;
 
     &:hover {
-      background: var(--bg-dark-500);
+      filter: brightness(0.9);
     }
   }
 

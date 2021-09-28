@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from 'react';
 import styles from './header.module.scss';
-import { TweenMax, Power3 } from 'gsap';
+import { gsap, Power3 } from 'gsap';
 
 import Lottie from 'react-lottie';
 import animationData from '../../../public/menuIcon.json';
@@ -33,9 +33,9 @@ export function Header() {
   }
 
   useEffect(() => {
-    TweenMax.to(header, 0, { css: { visibility: 'visible' } });
+    gsap.to(header, 0, { css: { visibility: 'visible' } });
 
-    TweenMax.from(header, 1, { y: 10, opacity: 0, ease: Power3.easeOut });
+    gsap.from(header, 1, { y: 10, opacity: 0, ease: Power3.easeOut });
   }, []);
 
   return (

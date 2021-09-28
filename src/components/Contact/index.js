@@ -27,7 +27,7 @@ export function Contact() {
     <section className={styles.contactContainer} id="contact" ref={ref}>
       <h1>Contact Me</h1>
       <p>I am currently looking for a new job opportunity. Feel free to contact me and I will answer you as fast as I can.</p>
-      <a className={styles.contactButton} href="http://www.google.com">Email me</a>
+      <a className={styles.contactButton} href="mailto:raffcode@gmail.com?cc=rafael_amorim30@hotmail.com?subject=Contact from portfolio website">Email me</a>
     </section>
   );
 }

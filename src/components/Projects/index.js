@@ -28,7 +28,7 @@ export function Projects() {
     });
   }, []);
   return (
-    <section className={styles.projectsContainer} id="projects">
+    <section className={styles.projectsContainer} id="portfolio">
       <h1 ref={ref}>Projects</h1>
       <div className={styles.projectsWrapper}>
         {Data.map(project => {
