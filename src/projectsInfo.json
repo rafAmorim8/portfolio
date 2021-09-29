@@ -1,41 +1,54 @@
 [
   {
     "id": 1,
-    "name": "Project 1",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, optio eos facere quasi illum praesentium quaerat deleniti animi a quo quidem quibusdam? Qui iusto, adipisci inventore nemo non possimus explicabo?",
+    "name": "NotesApp",
+    "description": "NotesApp is a simple personal project that allows users to create, edit and delete notes. Data is stored in the browser's local storage.",
     "technologies": [
       "ReactJS",
-      "NodeJS",
-      "HTML"
+      "Hooks",
+      "Material UI"
     ],
-    "url": "www.google.com",
-    "gitRepo": "https://github.com/rafAmorim8/portfolio",
+    "url": "https://take-notes-app.herokuapp.com",
+    "gitRepo": "https://github.com/rafAmorim8/CodePartner",
     "imageName": "/projectOneImage.jpg"
   },
   {
     "id": 2,
-    "name": "Project 2",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, optio eos facere quasi illum praesentium quaerat deleniti animi a quo quidem quibusdam? Qui iusto, adipisci inventore nemo non possimus explicabo?",
+    "name": "MoveIt",
+    "description": "Project to help students and developers to stay healthy. After each pomodoro cycle (set to 3s just for demonstration purposes) the user gets a light exercise to do, if the user completes it they get xp.",
     "technologies": [
       "ReactJS",
-      "NodeJS",
-      "HTML"
+      "TypeScript",
+      "Next.js"
     ],
-    "url": "www.google.com",
-    "gitRepo": "https://github.com/rafAmorim8/portfolio",
+    "url": "https://moveit-next-nu.vercel.app/",
+    "gitRepo": "https://github.com/rafAmorim8/moveit-next",
     "imageName": "/projectTwoImage.jpg"
   },
   {
     "id": 3,
-    "name": "Project 3",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, optio eos facere quasi illum praesentium quaerat deleniti animi a quo quidem quibusdam? Qui iusto, adipisci inventore nemo non possimus explicabo?",
+    "name": "CodePartner",
+    "description": "A website to find other developers created as a project to the Web Development I course. It features a basic login/registration process and it gets data from the gitHub API.",
     "technologies": [
-      "ReactJS",
-      "NodeJS",
-      "HTML"
+      "PHP",
+      "SQL Database",
+      "gitHub API"
     ],
-    "url": "https://google.com",
-    "gitRepo": "https://github.com/rafAmorim8/portfolio",
+    "url": "https://raffcode.com/projects/codePartner/index.php",
+    "gitRepo": "https://github.com/rafAmorim8/CodePartner",
+    "imageName": "/projectThreeImage.jpg"
+  },
+  {
+    "id": 4,
+    "name": "GitHub Clone",
+    "description": "A simple UI clone developed to gain more experience with TypeScript and styled-components.",
+    "technologies": [
+      "TypeScript",
+      "Styled-components",
+      "Heroku"
+    ],
+    "url": "https://github-clone-react.herokuapp.com/",
+    "gitRepo": "https://github.com/rafAmorim8/github-clone",
     "imageName": "/projectThreeImage.jpg"
   }
 ]
