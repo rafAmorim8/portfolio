@@ -10,11 +10,12 @@
   .socialLinks {
     width: 50%;
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    justify-content: center;
     margin-bottom: 1rem;
 
     svg {
+      margin-right: 2rem;
       fill: var(--gray-200);
       transition: var(--transition);
 
@@ -53,5 +54,4 @@
       color: var(--purple-500);
     }
   }
-
 }
