@@ -4,6 +4,7 @@
   width: 100%;
   opacity: 1;
   margin-bottom: 8rem;
+  color: var(--gray-200);
 
   h1 {
     margin-bottom: 3rem;
@@ -37,5 +38,11 @@
     &:hover {
       filter: brightness(0.9);
     }
+  }
+}
+
+@media only screen and (min-width: 720px) {
+  .aboutContainer {
+    min-height: auto;
   }
 }

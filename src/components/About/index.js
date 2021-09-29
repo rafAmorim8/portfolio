@@ -29,24 +29,26 @@ export function About() {
     <section className={styles.aboutContainer} id="about" ref={ref}>
       <h1>About Me</h1>
       <p>
-        Hi! I am Rafael, a computer science student that lives in Vancouver, who loves developing things.<br /><br />
-        During my 1.5 years as a CS student at <a className="animatedLink" href="http://www.langara.ca">Langara
-          College</a> I have developed
+        Hi! I am Rafael, a developer that lives in Vancouver, who loves building stuff for the web.<br /><br />
+        I recently graduated from a 2-year Diploma in Computer Studies at <a className="animatedLink" href="http://www.langara.ca">Langara
+          College</a>. During the course I developed
         some websites and web apps to apply the concepts
         I've learnt in class.<br /><br />
-        I am currently looking for a co-op position to gain more practical experience by building well developed
+        I am currently looking for a junior developer position to gain more practical experience by building well developed
         apps
-        while working with experienced developers. <br /><br />
-        Below are some of the technologies I have worked with:
+        while working with other developers. <br /><br />
+        Below are some of the languages and tools that I have worked with:
       </p>
       <ul className="technologies">
-        <li>JavaScript</li>
-        <li>HTML &amp CSS</li>
-        <li>React</li>
-        <li>Node.js</li>
+        <li>HTML &amp; CSS</li>
         <li>TypeScript</li>
+        <li>JavaScript</li>
         <li>Git</li>
+        <li>React</li>
         <li>Java (begginer)</li>
+        <li>Node.js</li>
+        <li>PHP</li>
+        <li>mongoDB</li>
       </ul>
       <a className={styles.aboutButton} href="/resume.pdf"
         rel="noopener noreferrer">Resume</a>
