@@ -32,8 +32,8 @@ html {
 
 body {
   .active {
-    top: 5rem !important;
-    background: var(--bg-dark);
+    top: 0 !important;
+    background: unset;
     z-index: 2 !important;
   }
 }
@@ -47,6 +47,14 @@ body {
 @media (max-width: 720px) {
   html {
     font-size: 87.5%; //14px and accessible
+  }
+
+  body {
+    .active {
+      top: 5rem !important;
+      background: var(--bg-dark);
+      z-index: 2 !important;
+    }
   }
 }
 

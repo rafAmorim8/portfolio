@@ -1,6 +1,6 @@
 .headerContainer {
   visibility: hidden;
-  width: 100vw;
+  width: 100%;
   z-index: 4;
 
   .navbar {
@@ -8,8 +8,6 @@
     width: 100%;
     position: fixed;
     top: 0;
-
-    padding: 2rem;
 
     display: flex;
     flex-direction: row;
@@ -47,11 +45,30 @@
 
       li {
         a {
+          display: inline-block;
           text-decoration: none;
           color: var(--gray-100);
 
           font-weight: 600;
           font-size: 1.5rem;
+          line-height: 1rem;
+
+
+          &::after {
+            content: "";
+            display: block;
+            position: relative;
+            width: 0%;
+            height: 4px;
+            background: var(--purple-500);
+            transition: all 0.25s cubic-bezier(0.6, 0.0, 0.3, 1) 0s;
+          }
+
+          &:hover {
+            &::after {
+              width: 105%;
+            }
+          }
         }
       }
     }
@@ -74,6 +91,35 @@
 
       .animation {
         cursor: pointer;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 720px) {
+  .headerContainer {
+    .navbar {
+      .navList {
+        height: 100%;
+        width: auto;
+
+        position: relative;
+        top: 0;
+
+        flex-direction: row;
+        padding-bottom: 0;
+
+        li {
+          margin-left: 2.5rem;
+
+          a {
+            font-size: 1rem;
+          }
+        }
+      }
+
+      .menuButton {
+        display: none;
       }
     }
   }
