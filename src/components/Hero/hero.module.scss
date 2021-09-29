@@ -52,5 +52,21 @@
       filter: brightness(0.9);
     }
   }
+}
 
+@media only screen and (min-width: 720px) {
+  .heroContainer {
+    .heroHelloInner {
+      font-size: 1.8rem;
+    }
+
+    .heroInfoInner {
+      font-size: 4rem;
+      line-height: 4.1rem;
+    }
+
+    .heroDescriptionInner {
+      max-width: 80%;
+    }
+  }
 }
