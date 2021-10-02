@@ -51,7 +51,7 @@ export function About() {
         <li>mongoDB</li>
       </ul>
       <a className={styles.aboutButton} href="/resume.pdf"
-        rel="noopener noreferrer">Resume</a>
+        rel="noopener noreferrer">Download Resume</a>
     </section>
   );
 }
