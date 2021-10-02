@@ -44,6 +44,7 @@
     "description": "A simple UI clone developed to gain more experience with TypeScript and styled-components.",
     "technologies": [
       "TypeScript",
+      "Styled components",
       "Heroku"
     ],
     "url": "https://github-clone-react.herokuapp.com/",
