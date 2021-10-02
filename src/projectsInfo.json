@@ -9,7 +9,7 @@
       "Material UI"
     ],
     "url": "https://take-notes-app.herokuapp.com",
-    "gitRepo": "https://github.com/rafAmorim8/CodePartner",
+    "gitRepo": "https://github.com/rafAmorim8/notes-app",
     "imageName": "/projectOneImage.jpg"
   },
   {
@@ -44,11 +44,10 @@
     "description": "A simple UI clone developed to gain more experience with TypeScript and styled-components.",
     "technologies": [
       "TypeScript",
-      "Styled-components",
       "Heroku"
     ],
     "url": "https://github-clone-react.herokuapp.com/",
     "gitRepo": "https://github.com/rafAmorim8/github-clone",
-    "imageName": "/projectThreeImage.jpg"
+    "imageName": "/projectFourImage.jpg"
   }
 ]

@@ -9,7 +9,7 @@ import LinkIcon from '../LinkIcon';
 
 import styles from './projectCard.module.scss';
 
-export function ProjectCard({ id, name, imageName, description, technologies, url, gitRepo }) {
+export function ProjectCard({ id, name, imageName, description, technologies, url, gitRepo, alt }) {
   const card = useRef(null);
   const cardImage = useRef(null);
 
@@ -59,8 +59,8 @@ export function ProjectCard({ id, name, imageName, description, technologies, ur
         </div>
       </div>
       <div className={styles.projectImageWrapper} ref={cardImage}>
-        <a href="http://google.com" target="_blank" rel="noopener noreferrer">
-          <Image className={styles.projectImage} src={imageName} priority="true" placeholder="blur" alt="Project 1" layout="fill" object-fit="cover" />
+        <a href={`${url}`} target="_blank" rel="noopener noreferrer">
+          <Image className={styles.projectImage} src={imageName} alt={alt} priority="true" placeholder="blur" alt="Project 1" layout="fill" />
         </a>
       </div>
     </div >
