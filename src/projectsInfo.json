@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "NotesApp",
-    "description": "NotesApp is a simple personal project that allows users to create, edit and delete notes. Data is stored in the browser's local storage.",
+    "description": "NotesApp is a simple personal project that allows users to create, edit and delete notes. Data is stored in the browser's local storage and the application was deployed using Heroku.",
     "technologies": [
       "ReactJS",
       "Hooks",
@@ -27,15 +27,15 @@
   },
   {
     "id": 3,
-    "name": "CodePartner",
-    "description": "A website to find other developers created as a project to the Web Development I course. It features a basic login/registration process and it gets data from the gitHub API.",
+    "name": "Portfolio",
+    "description": "A responsive portfolio to show my personal projects built with ReactJS and deployed with Vercel. Website animations were made using GSAP.",
     "technologies": [
-      "PHP",
-      "SQL Database",
-      "gitHub API"
+      "ReactJS",
+      "Vercel",
+      "GSAP"
     ],
-    "url": "https://raffcode.com/projects/codePartner/index.php",
-    "gitRepo": "https://github.com/rafAmorim8/CodePartner",
+    "url": "https://raffcode.com/",
+    "gitRepo": "https://github.com/rafAmorim8/portfolio",
     "imageName": "/projectThreeImage.jpg"
   },
   {
