@@ -34,7 +34,7 @@
         height: 100%;
         inset: 0px;
         z-index: 2;
-        background-color: rgba(18, 18, 20, 0.93);
+        background-color: rgba(18, 18, 20, 0.9);
         transition: var(--transition);
       }
 
@@ -134,6 +134,13 @@
 
 @media only screen and (min-width: 900px) {
   .projectCardContainer {
+    .projectImageWrapper {
+      a {
+        ::before {
+          background-color: rgba(18, 18, 20, 0.7);
+        }
+      }
+    }
 
     &:nth-child(odd) {
       .projectInfo {

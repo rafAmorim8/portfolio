@@ -1,16 +1,16 @@
 [
   {
-    "id": 1,
-    "name": "NotesApp",
-    "description": "NotesApp is a simple personal project that allows users to create, edit and delete notes. Data is stored in the browser's local storage and the application was deployed using Heroku.",
+    "id": 3,
+    "name": "CodePartner",
+    "description": "An app that helps developers to find other developers to share experiences and work or study together. Project built to study typescript and firebase.",
     "technologies": [
-      "ReactJS",
-      "Hooks",
-      "Material UI"
+      "TypeScript",
+      "Oauth",
+      "Firebase"
     ],
-    "url": "https://take-notes-app.herokuapp.com",
-    "gitRepo": "https://github.com/rafAmorim8/notes-app",
-    "imageName": "/projectOneImage.jpg"
+    "url": "https://codepartner-716be.web.app/",
+    "gitRepo": "https://github.com/rafAmorim8/codePartnerWeb",
+    "imageName": "/projectThreeImage.jpg"
   },
   {
     "id": 2,
@@ -26,17 +26,17 @@
     "imageName": "/projectTwoImage.jpg"
   },
   {
-    "id": 3,
-    "name": "Portfolio",
-    "description": "A responsive portfolio to show my personal projects built with ReactJS and deployed with Vercel. Website animations were made using GSAP.",
+    "id": 1,
+    "name": "NotesApp",
+    "description": "NotesApp is a simple personal project that allows users to create, edit and delete notes. Data is stored in the browser's local storage and the application was deployed using Heroku.",
     "technologies": [
       "ReactJS",
-      "Vercel",
-      "GSAP"
+      "Hooks",
+      "Material UI"
     ],
-    "url": "https://raffcode.com/",
-    "gitRepo": "https://github.com/rafAmorim8/portfolio",
-    "imageName": "/projectThreeImage.jpg"
+    "url": "https://take-notes-app.herokuapp.com",
+    "gitRepo": "https://github.com/rafAmorim8/notes-app",
+    "imageName": "/projectOneImage.jpg"
   },
   {
     "id": 4,
